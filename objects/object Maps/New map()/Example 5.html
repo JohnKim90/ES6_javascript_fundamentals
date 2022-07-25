@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+    <link rel="stylesheet" href="/episode 1/index.css" />
+  </head>
+  <body>
+    <h1>Objects New Map() Example 5</h1>
+    <h2>JavaScript Map Objects</h2>
+    <p>Creating a Map from an Array:</p>
+    <p id="demo"></p>
+    <script>
+      // create map
+      const month = new Map([
+        ["October", 10000],
+        ["November", 11000],
+        ["December", 12000],
+      ]);
+
+      document.getElementById("demo").innerHTML = month.get("October");
+    </script>
+  </body>
+</html>
