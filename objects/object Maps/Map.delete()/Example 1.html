@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>Jvascript Maps</h2>
+    <p>Deleting MAap Elements</p>
+    <p id="demo"></p>
+
+    <script>
+        // create a map
+        const fruits = new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["ornages",200]
+        ]);
+
+        //delete an element
+        fruits.delete("apples");
+
+
+        document.getElementById("demo").innerHTML = fruits.size
+    </script>
+</body>
+</html>
