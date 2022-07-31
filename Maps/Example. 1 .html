@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Maps</title>
+</head>
+<body>
+    <h1>ES6 Maps</h1>
+
+    <script>
+let string ="qwertyuiop";
+
+let letters = new Map();
+for(let i=0; i<string.length; i++){
+    let letter = string[i];
+    if (!letters.has(letter)){
+        letter.set(letter,1);
+    } else{
+        letters.set(letter,letters.get(letter) + 1);
+    }
+}
+
+console.log(letters);
+
+    </script>
+</body>
+</html>
