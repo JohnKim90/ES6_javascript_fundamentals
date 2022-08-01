@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Manipulation</title>
+  </head>
+  <body>
+    <h1>Object Manipulation</h1>
+    <script>
+      let obj = {
+        a: "one",
+        b: "two",
+        c: "three",
+      };
+      let entries = Object.entries(obj);
+
+      for (let entry of entries) {
+        console.log(`Key :$ (entry[0]} ,values $(entry[1]}`);
+      }
+    </script>
+  </body>
+</html>

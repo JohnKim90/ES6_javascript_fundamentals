@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Method</title>
+  </head>
+  <body>
+    <h1>Private Method</h1>
+    <script>
+      const budget = () => {
+        let balance = 0;
+        let changeBal = (val) => {
+          return (balance += val);
+        };
+
+        const deposit20 = () => changeBal(20);
+        const withdraw20 = () => changeBal(-20);
+
+        const check = () => balance;
+
+        return { deposit20, withdraw20, check };
+      };
+      let wallet = budget();
+
+      wallet.deposit20();
+      wallet.withdraw20();
+      wallet.deposit20();
+      wallet.deposit20();
+      console.log(wallet.check());
+    </script>
+  </body>
+</html>

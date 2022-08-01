@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function and Factories</title>
+  </head>
+  <body>
+    <h1>Function and Factories</h1>
+    <script>
+      const product = (x) => (y) => y * x;
+      let mul5 = product(5);
+      let double = product(2);
+      console.log(double(9));
+    </script>
+  </body>
+</html>
